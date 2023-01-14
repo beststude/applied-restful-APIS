@@ -1,0 +1,55 @@
+{
+  "players": [
+    {
+      "name": "Aaron Rodgers",
+      "position": "Quarterback",
+      "rushing_yards": 257,
+      "touchdown_passes": 48,
+      "sacks": 5,
+      "field_goals_made": 0,
+      "field_goals_missed": 0,
+      "catches_made": 0
+    },
+    {
+      "name": "Aaron Jones",
+      "position": "Running back",
+      "rushing_yards": 1523,
+      "touchdown_passes": 0,
+      "sacks": 0,
+      "field_goals_made": 0,
+      "field_goals_missed": 0,
+      "catches_made": 47
+    },
+    {
+      "name": "Davante Adams",
+      "position": "Wide Receiver",
+      "rushing_yards": 0,
+      "touchdown_passes": 18,
+      "sacks": 0,
+      "field_goals_made": 0,
+      "field_goals_missed": 0,
+      "catches_made": 115
+    },
+    {
+      "name": "Za'Darius Smith",
+      "position": "Outside Linebacker",
+      "rushing_yards": 0,
+      "touchdown_passes": 0,
+      "sacks": 13.5,
+      "field_goals_made": 0,
+      "field_goals_missed": 0,
+      "catches_made": 0
+    },
+    {
+      "name": "Jaire Alexander",
+      "position": "Cornerback",
+      "rushing_yards": 0,
+      "touchdown_passes": 0,
+      "sacks": 0,
+      "field_goals_made": 0,
+      "field_goals_missed": 0,
+      "catches_made": 1
+    },
+    // And so on for a total of 15 players
+  ]
+}

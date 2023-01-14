@@ -1,0 +1,32 @@
+// Connect to MongoDB
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/musicdb', { useNewUrlParser: true });
+const db = mongoose.connection;
+
+// Handle connection error
+db.on('error', console.error.bind(console, 'connection error:'));
+
+// Create album schema
+const albumSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  artist: { type: String, required: true },
+  releaseYear: { type: Number, required: true },
+  genre: { type: String, required: true },
+  tracks: [{ type: String }]
+});
+
+// Create album model
+const Album = mongoose.model('Album', albumSchema);
+
+// Example albums data
+const albums = [
+  {
+    name: 'Thriller',
+    artist: 'Michael Jackson',
+    releaseYear: 1982,
+    genre: 'Pop',
+    tracks: ['Wanna Be Startin’ Somethin', 'Baby Be Mine', 'The Girl Is Mine']
+  },
+  {
+    name: 'The Dark Side of the Moon',
+    artist: 'Pink
